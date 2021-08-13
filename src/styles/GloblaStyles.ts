@@ -15,7 +15,7 @@ const GloblaStyles = createGlobalStyle`
 	body {
 		font-size: 1.6rem;
 		font-family: ${({ theme }) => theme.font.family.secondary};
-    color: ${({ theme }) => theme.colors.secondary}
+    color: ${({ theme }) => theme.colors.tertiary}
 	}
 
   *, input, button, h1, h2, h3, h4, h5, h6 {
