@@ -8,8 +8,9 @@ export const theme = {
   },
   font: {
     family: {
-      primary: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif",
+      primary:
+        "'-apple-system', 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Ubuntu', Arial, sans-serif",
+      secondary: "'Merriweather', Ubuntu, sans-serif",
     },
     sizes: {
       xsmall: '.8rem',

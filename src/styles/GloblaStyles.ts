@@ -9,16 +9,21 @@ const GloblaStyles = createGlobalStyle`
 
 	html {
 		font-size: 62.5%;
+    scroll-behavior: smooth;
 	}
 
 	body {
 		font-size: 1.6rem;
-		font-family: ${({ theme }) => theme.font.family.primary};
+		font-family: ${({ theme }) => theme.font.family.secondary};
 	}
 
+  *, input, button, h1, h2, h3, h4, h5, h6 {
+    font-family:${({ theme }) => theme.font.family.primary};
+  }
+
 	h1, h2, h3, h4, h5, h6 {
-		font-family:${({ theme }) => theme.font.family.secondary};
-		margin: ${({ theme }) => theme.spacings.large} 0;
+    margin: ${({ theme }) => theme.spacings.large} 0;
+    font-weight: 800;
 	}
 
 	p {
