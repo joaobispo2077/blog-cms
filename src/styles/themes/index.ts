@@ -5,6 +5,7 @@ export const theme = {
     tertiary: '#00bcf0',
     quaternary: '#ffe556',
     quinary: '#c8412d',
+    gray: '#DDDD',
     darkblue: '#0A1128',
   },
   font: {

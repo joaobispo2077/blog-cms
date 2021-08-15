@@ -1,11 +1,12 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 import { HtmlContent, HtmlContentProps } from '.';
+import mockedHtmlContent from './mock';
 
 export default {
   title: 'HtmlContent',
   component: HtmlContent,
   args: {
-    html: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta aliquid tempora magnam deleniti, consectetur nostrum aperiam similique deserunt non recusandae nemo eligendi fugit iure voluptatum facilis assumenda! Quas, repudiandae.',
+    html: mockedHtmlContent,
   },
   argTypes: {
     children: { type: 'string' },
@@ -13,5 +14,9 @@ export default {
 } as Meta;
 
 export const Template: Story<HtmlContentProps> = (args) => {
-  return <HtmlContent {...args} />;
+  return (
+    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+      <HtmlContent {...args} />
+    </div>
+  );
 };
